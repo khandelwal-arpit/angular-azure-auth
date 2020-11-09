@@ -1,6 +1,13 @@
-# AngularAzureAuth
+# Angular-Azure-Auth
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0. The objective of this project is to demonstrate authenticating Angular apps with Azure Active Directory using MSAL Angular 1.0.
+
+## MSAL library
+Microsoft released Version 1.0 of its Library for Angular that facilitates the implementation of OAuth 2.0 token based authentication into Azure Active Directory. The library was released on May 3rd 2020 ending a long phase of workarounds and beta versions of the Angular variant of the MSAL library for Single Page Applications (SPA).
+
+## Prerequisites
+- NPM, Angular CLI (v10)
+- Azure AD, get your free Azure account here: https://azure.microsoft.com/en-us/free/
 
 ## Development server
 
@@ -14,14 +21,61 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Environment Configurations
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Replace the following in the environment.ts config with your application specific values:
 
-## Running end-to-end tests
+- clientId: '{YOUR-APP-CLIENT_ID}',
+- authority: 'https://login.microsoftonline.com/{YOUR-APP-TENANT-ID}/'
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Configure a new app registration in Azure AD
 
-## Further help
+<p align="center">
+    <b>Azure AD App Registrations</b><br>
+    <br>
+    <img width="600" src="https://github.com/khandelwal-arpit/angular-azure-auth/blob/master/documentation/MS-AD-1.png">
+</p>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<p align="center">
+    <b>Configure Redirect URI</b><br>
+    <br>
+    <img width="600" src="https://github.com/khandelwal-arpit/angular-azure-auth/blob/master/documentation/MS-AD-2.png">
+</p>
+
+<p align="center">
+    <b>Configure SPA</b><br>
+    <br>
+    <img width="600" src="https://github.com/khandelwal-arpit/angular-azure-auth/blob/master/documentation/MS-AD-3.png">
+</p>
+
+<p align="center">
+    <b>Client Id & Tenant Id</b><br>
+    <br>
+    <img width="600" src="https://github.com/khandelwal-arpit/angular-azure-auth/blob/master/documentation/MS-AD-4.png">
+</p>
+
+## Application Screenshots
+
+<p align="center">
+    <b>Launch Page</b><br>
+    <br>
+    <img width="600" src="https://github.com/khandelwal-arpit/angular-azure-auth/blob/master/documentation/pg-1.png">
+</p>
+
+<p align="center">
+    <b>Login Page</b><br>
+    <br>
+    <img width="600" src="https://github.com/khandelwal-arpit/angular-azure-auth/blob/master/documentation/pg-2.png">
+</p>
+
+<p align="center">
+    <b>Password Page</b><br>
+    <br>
+    <img width="600" src="https://github.com/khandelwal-arpit/angular-azure-auth/blob/master/documentation/pg-3.png">
+</p>
+
+<p align="center">
+    <b>Profile Page</b><br>
+    <br>
+    <img width="600" src="https://github.com/khandelwal-arpit/angular-azure-auth/blob/master/documentation/pg-4.png">
+</p>
