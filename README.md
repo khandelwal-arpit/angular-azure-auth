@@ -1,3 +1,11 @@
+<h1 align="center">
+  <br>
+  <a><img src="https://github.com/khandelwal-arpit/angular-azure-auth/blob/master/documentation/logo.png" alt="MSAL"></a>
+  <br>
+  Angular MSAL Based Authentication
+  <br>
+</h1>
+
 # Angular-Azure-Auth
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0. The objective of this project is to demonstrate authenticating Angular apps with Azure Active Directory using MSAL Angular 1.0.
